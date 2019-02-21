@@ -1,0 +1,134 @@
+<html>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body {
+  background-color: #3182bd;
+  font-family: 'Raleway', sans-serif;
+}
+
+#host {
+  color: white;
+}
+
+.main-logo {
+  width: 200px;
+}
+
+.resbaz-logo {
+  width: 40px;
+}
+
+.list-label {
+  margin-left: 15%;
+}
+
+.list-group, .well {
+  width: 20em;
+}
+
+.top-spacer {
+  height: 30%;
+}
+
+.well {
+  background-color: white;
+}
+
+</style>
+<script type="text/javascript">
+$(function() {
+  var isIP = /^\d+\./.test(window.location.host);
+  if (isIP) {
+    $('#host').text(window.location.host);
+  } else {
+    var host = window.location.host.replace(/\..*$/, "");
+    var domain = window.location.host.replace(/^[^\.]+\./, "");
+    $('#host').text(host);
+    $('#parent-link').attr('href', window.location.protocol+"//"+domain+"/");
+  }
+});
+</script>
+</head>
+<body>
+
+<div class="container">
+<div class="row hidden-xs top-spacer">
+
+</div>
+<div class="row">
+<div class="col-sm-offset-2 col-sm-4">
+
+<br class="hidden-xs"/>
+<br class="hidden-xs"/>
+<br class="hidden-xs"/>
+
+<a id="parent-link" href="#">
+  <img class="main-logo center-block" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA2MyA0MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxuczpzZXJpZj0iaHR0cDovL3d3dy5zZXJpZi5jb20vIiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEuNDE0MjE7Ij4gICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoNC4xNjY2NywwLDAsNC4xNjY2NywtMi4zNDkyMiwtMTMuMDEzOSkiPiAgICAgICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMC43Nzk3NiwwLDAsMC43ODM5NSwtMjk5Ljk5LC00MTguNjMpIj4gICAgICAgICAgICA8cGF0aCBkPSJNMzkxLjg0LDU0MC45MUMzOTEuNDE5LDU0MC41ODEgMzkwLjg5MSw1NDAuMzg2IDM5MC4zMTcsNTQwLjM4NkMzODguOTY2LDU0MC4zODYgMzg3Ljg2Niw1NDEuNDcgMzg3LjgzMiw1NDIuODIxQzM4Ni40MzcsNTQzLjM0NyAzODUuNDQ0LDU0NC43MDEgMzg1LjQ0NCw1NDYuMjg3QzM4NS40NDQsNTQ4LjE2MSAzODYuODI5LDU0OS43MSAzODguNjI2LDU0OS45NTRMMzg4LjYyNiw1NDkuOTg4TDQwMS4zNTYsNTQ5Ljk4OEw0MDEuMzU2LDU0OS45ODJDNDAzLjEzMSw1NDkuODc4IDQwNC41MzgsNTQ4LjM5OCA0MDQuNTM4LDU0Ni41ODdDNDA0LjUzOCw1NDQuODQgNDAzLjIyOSw1NDMuNDAxIDQwMS41NDQsNTQzLjIwOEM0MDEuNTUxLDU0My4xMDIgNDAxLjU1NSw1NDIuOTk0IDQwMS41NTUsNTQyLjg4NkM0MDEuNTU1LDU0MC4xNzkgMzk5LjI4NCw1MzcuOTg1IDM5Ni40ODMsNTM3Ljk4NUMzOTQuNDEsNTM3Ljk4NSAzOTIuNjI3LDUzOS4xODcgMzkxLjg0LDU0MC45MSIgc3R5bGU9ImZpbGw6d2hpdGU7ZmlsbC1ydWxlOm5vbnplcm87Ii8+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4="/>
+</a>
+<h4 id="host" class="text-center"></h4>
+
+</div>
+
+<div class="col-sm-4">
+
+<br class="hidden-xs"/>
+<br class="hidden-xs"/>
+
+<!-- Common tools -->
+<div class="list-group center-block">
+  <a class="list-group-item" href="/x11/" target="_blank">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-list-alt fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="list-label">
+      X11 Session
+    </span>
+  </a>
+  <a id="novnc-notouch" style="display: none" class="list-group-item" href="/x11/vnc.html?autoconnect=true&path=x11/websockify&touch=false" target="_blank">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-list-alt fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="list-label">
+      X11 w/o touch support
+    </span>
+  </a>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    if ('ontouchstart' in document.documentElement) {
+      $('#novnc-notouch').css('display','auto');
+    }
+  });
+  </script>
+  <a class="list-group-item" href="/tty/" target="_blank">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="list-label">
+      Shell Terminals
+    </span>
+  </a>
+  <a class="list-group-item" href="/files/" target="_blank">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-folder-open fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="list-label">
+      File Management
+    </span>
+  </a>
+</div>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

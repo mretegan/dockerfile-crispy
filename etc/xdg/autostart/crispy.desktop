@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Crispy
+Comment=
+TryExec=crispy
+Exec=crispy
+Type=Application
+OnlyShowIn=XFCE;
+Terminal=false
+Hidden=false
